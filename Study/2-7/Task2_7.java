@@ -9,10 +9,9 @@ public class Task2_7 {
         System.out.println(country.length);
 
     // 問３
-    // ↓↓　以下修正しました。　↓↓
-        String[] strArray;
-        strArray = new String[3];
-
+    // ↓↓　以下再度修正しました。　↓↓
+        String[] strArray = new String[3];
+       
         strArray[0] = "りんご";
         strArray[1] = "もも";
         strArray[2] = "ぶどう";
