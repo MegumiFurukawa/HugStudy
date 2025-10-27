@@ -9,10 +9,17 @@ public class Task2_7 {
         System.out.println(country.length);
 
     // 問３
-        String[] sttArray = {"りんご", "もも", "ぶどう"};
+    // ↓↓　以下修正しました。　↓↓
+        String[] strArray;
+        strArray = new String[3];
+
+        strArray[0] = "りんご";
+        strArray[1] = "もも";
+        strArray[2] = "ぶどう";
+
 
     // 問４
-        System.out.println(sttArray[2]);
+        System.out.println(strArray[2]);
 
     // 問５
         // int型の配列変数intArrayを宣言し、10, 20, 30, 40, 50,で初期化している。
