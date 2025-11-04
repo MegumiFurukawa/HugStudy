@@ -16,17 +16,17 @@ public class Task2_9 {
     String pass = "alice123";
 
     // 問1
-    if(name == USER_NAME && pass == USER_PASSWORD) {
+    if(name.equals(USER_NAME) && pass.equals(USER_PASSWORD)) {
 
         System.out.println(CONST_MSG_SUCCESS);
 
     // 問２
-    }else if(name == USER_NAME) {
+    }else if(name.equals(USER_NAME)) {
 
         System.out.println(CONST_MSG_ERROR_PASS);
 
     // 問３
-    }else if (pass == USER_PASSWORD) {
+    }else if (pass.equals(USER_PASSWORD)) {
 
         System.out.println(CONST_MSG_ERROR_NAME);
 
