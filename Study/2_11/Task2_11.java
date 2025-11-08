@@ -12,10 +12,16 @@ public class Task2_11 {
 
 
         // 問２
+        int[] evenNumbers = new int[10];
+        int index = 0;
         for (int i = 1; i <= 20; i++) {
             if (i % 2 == 0) {
-                System.out.println(i);
+                evenNumbers[index] = i;
+                index++;
             }
+        }
+        for (int i = 0; i < evenNumbers.length; i++) {
+            System.out.println(evenNumbers[i]);
         }
 
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -29,7 +35,7 @@ public class Task2_11 {
         for (int i = 0; i < numbers.length; i++) {
 
         //問題③ 奇数かどうかの判定をするために、for文で取得したnumberを2で割り、余りが0にならないような条件文(if文)を記載して下さい。
-            if(numbers[i] % 2 == 1){
+            if(numbers[i] % 2 != 0){
             add += numbers[i];
             }
         }
